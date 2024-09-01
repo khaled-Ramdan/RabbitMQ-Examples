@@ -1,0 +1,18 @@
+1 - open the docker image
+2 - run two instances of the receive.js and one instances of the send.js
+3 - send a message as argument from the send.js : node fanout_exchange/emit_logs.js hello
+
+
+How send works? 
+1 - create connection and channel 
+2 - assert exchange with type fanout. durable is false because you don't care to keep it when restart
+3 - create a publisher with this exchange. The routing key is not important in the fanout type
+
+
+
+How receive works?
+1 - create connection and channel and fanout exchange
+2 - create a queue with random name (don't care what name it has)
+3 - exlusive is true to delete this queue automatically when the connection terminates
+4 - bind this queue to the logs exchange
+5 - consume the message from the receive.js

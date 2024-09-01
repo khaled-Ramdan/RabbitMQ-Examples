@@ -1,0 +1,8 @@
+You can open more than one service
+A service is represented by running the 'consume_task.js' more than one time
+run using : node task_work_queue/send_task.js <number of seconds for the task>   
+The load is balanced between both queues 
+
+
+Task queue is to avoid time consuming tasks
+1 - making the queue durablue and messages presisitant

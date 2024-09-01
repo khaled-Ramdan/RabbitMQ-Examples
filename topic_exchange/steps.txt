@@ -1,0 +1,9 @@
+example: 
+1 - open 4 terminals
+node topic_exchange/receive_logs_topic.js "#.error" => more than one word then `error`
+node topic_exchange/receive_logs_topic.js "*.feedback.error" => one word then `feedback.error`
+node topic_exchange/receive_logs_topic.js "us-east.billing.*" =>   `us-east.billing` then one word
+
+
+* => replaces only one word
+# => replaces one or more words

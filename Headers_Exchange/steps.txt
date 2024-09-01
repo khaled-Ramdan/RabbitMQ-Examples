@@ -1,0 +1,4 @@
+1 - no routing or binding key.
+2 - add your object in the header object
+3 - IN receive => you should specify x-match 
+4- x-match [all] [any] => they simluate '&&' and '||' operators respectively

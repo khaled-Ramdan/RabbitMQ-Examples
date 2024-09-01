@@ -1,0 +1,9 @@
+Direct Exechange: 
+
+1 - run docker container with command :   
+    docker run -d --hostname my-rabbit --name rabbitmq  -p 15672:15672 -p 5672:5672 rabbitmq:3-management
+
+2 - open localhost:15672 in browser see queues details
+
+3 - send a message fromo the send.js file
+4 - open reveice.js file to receive the message
