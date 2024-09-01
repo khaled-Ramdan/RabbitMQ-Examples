@@ -7,5 +7,5 @@
 
 - open localhost:15672 in browser see queues details
 
-- send a message fromo the send.js file
+- send a message from the send.js file
 - open reveice.js file to receive the message
